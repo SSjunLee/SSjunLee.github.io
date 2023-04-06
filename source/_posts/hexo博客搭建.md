@@ -182,7 +182,6 @@ live2d:
     height: 300
   mobile:
     show: true
-
 ```
 
 建立目录 live2d_models/shizuku，在下面建立shizuku.model.json
@@ -191,3 +190,31 @@ live2d:
 npm install --save live2d-widget-model-shizuku
 ```
 
+## 集成gitpages
+
+创建一个github仓库，名字为`名字.github.io` ,并提交代码，下载hexo同步插件。
+
+```bash
+npm install hexo-deployer-git --save
+```
+
+在站点配置中配置
+
+```yaml
+deploy:
+  type: git
+  repository: 地址
+  branch: gh-pages
+```
+
+
+```bash
+# 清理缓存
+hexo clean
+
+# 生成静态文件
+hexo g  
+
+# 部署
+hexo deploy
+```

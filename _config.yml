@@ -7,7 +7,7 @@ title: LJN的个人主页
 subtitle: ''
 description: ''
 keywords:
-author: LJN
+author: 'LJN'
 language: zh-CN
 timezone: ''
 
@@ -100,11 +100,10 @@ ignore:
 # theme: landscape
 theme: next
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
-
+  type: git
+  repository: git@github.com:SSjunLee/SSjunLee.github.io.git
+  branch: gh-pages
 
 
 
